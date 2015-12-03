@@ -1,4 +1,3 @@
-str = 'X-DSPAM-Confidence: 0.8475'
 """
 Task:
 Take the following Python code that stores a string:‘
@@ -12,6 +11,7 @@ a floating point number.
 >>> print(d)
 0.8475
 """
+str = 'X-DSPAM-Confidence: 0.8475'
 b = str.find(':') + 1
 c = str[b:]
 d = float(c)
