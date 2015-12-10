@@ -43,13 +43,14 @@ There are 27 adresses in the list
 words = []
 lines = []
 count = 0
-txt = open('mbox-short.txt').read()
-line = txt.split('\n')
-for word in line:
-    if word.startswith('From '):
-        words = word.split()
-        lines.append(words[1])
+txt = open('mbox-short.txt')
+for line in txt:
+    if line.startswith('From '):
+        line = line.rstrip()
+        if not line.startswith('From ') : continue
+        lines = line.split()
+        words.append(lines[1])
         count += 1
-for adress in lines:
+for adress in words:
     print(adress)
 print('There are', count, 'adresses in the list')
