@@ -29,5 +29,4 @@ for line in txt:
                 adress[words[1]] = 1
         else:
             adress[words[1]] += 1
-for adr in adress:
-    print(adr, adress[adr])
+help(dict)
