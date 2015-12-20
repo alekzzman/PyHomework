@@ -4,6 +4,7 @@ def reverse(text):
     the reversal of a string. For example,
     reverse("I am testing") should return the
     string "gnitset ma I"
+    >>> text = 'i am testing'
     >>> z = reverse(text)
     >>> x = text[::-1]
     >>> z == x
@@ -18,4 +19,3 @@ def reverse(text):
         lastchar -= 1
     result = ''.join(listed)
     return result
-reverse('i am testing')
